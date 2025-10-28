@@ -9,12 +9,12 @@ const App = () => {
     setSelectedOption(option);
   }
   return (
-    <div >
+    <div className="parent">
       {/* Do not remove the main div */}
       <h1>Parent Component</h1>
       <ChildComponent1 handleOptionChange={handleOptionChange} />
       <ChildComponent2 handleOptionChange={handleOptionChange} />
-      <p>Selected Option:{selectedOption}</p>
+      <p>Selected Option: {selectedOption}</p>
     </div>
   );
 };
